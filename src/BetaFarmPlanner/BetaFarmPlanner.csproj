@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Version>1.0.0</Version>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>BetaFarmPlanner</RootNamespace>
+    <AssemblyName>BetaFarmPlanner</AssemblyName>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    <Compile Include="../BetaFarmPlanner.Core/*.cs" Link="Core/%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="manifest.json" CopyToOutputDirectory="Always" />
+    <None Update="i18n/**/*" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../README.md" Link="README.md" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

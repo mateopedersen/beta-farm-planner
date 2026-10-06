@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <ModZipPath>$(MSBuildThisFileDirectory)_releases</ModZipPath>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+</Project>

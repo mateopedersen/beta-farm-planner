@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+.vs/
+bin/
+obj/
+_releases/
+TestResults/
+*.user
+stardewvalley.targets
+

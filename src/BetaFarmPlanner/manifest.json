@@ -1,0 +1,10 @@
+{
+  "Name": "Beta Farm Planner",
+  "Author": "Beta Calendars",
+  "Version": "%ProjectVersion%",
+  "Description": "A seasonal planning calendar with year overview, crop deadlines, upcoming events and custom reminders.",
+  "UniqueID": "BetaCalendars.BetaFarmPlanner",
+  "EntryDll": "BetaFarmPlanner.dll",
+  "MinimumApiVersion": "4.4.0",
+  "MinimumGameVersion": "1.6.14"
+}
