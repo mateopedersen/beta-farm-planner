@@ -1,4 +1,5 @@
 using BetaFarmPlanner.Core;
+using Xunit;
 
 namespace BetaFarmPlanner.Tests;
 
