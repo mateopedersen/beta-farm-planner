@@ -74,8 +74,8 @@ internal sealed class EventService
     {
         try
         {
-            Dictionary<string, NPCData> npcs = Game1.content.Load<Dictionary<string, NPCData>>("Data/Characters");
-            foreach ((string name, NPCData data) in npcs)
+            Dictionary<string, CharacterData> npcs = Game1.content.Load<Dictionary<string, CharacterData>>("Data/Characters");
+            foreach ((string name, CharacterData data) in npcs)
             {
                 if (data.BirthDay is < 1 or > 28 || string.IsNullOrWhiteSpace(data.BirthSeason)) continue;
                 int season = Array.FindIndex(FarmDate.Seasons, item => string.Equals(item, data.BirthSeason, StringComparison.OrdinalIgnoreCase));
