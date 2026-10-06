@@ -28,7 +28,7 @@ internal sealed class EventService
         AddBirthdays(result, today.Year + 1);
         foreach (PlannerReminder reminder in reminders)
             result.AddRange(reminder.GetEvents(today, 112));
-        return result.OrderBy(item => item.Date).ThenBy(item => item.Kind).ThenBy(item => item.Title, StringComparer.CurrentCultureIgnoreCase).ToArray();
+        return CalendarEventOrdering.Sort(result);
     }
 
     private static void AddSeasonBoundaries(List<PlannerEvent> events, int year)

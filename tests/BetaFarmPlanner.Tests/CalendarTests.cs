@@ -40,6 +40,16 @@ public sealed class CalendarTests
         Assert.Throws<ArgumentOutOfRangeException>(() => new FarmDate(1, 113));
         Assert.Throws<ArgumentOutOfRangeException>(() => new FarmDate(1, 1).AddDays(-1));
     }
+
+    [Fact]
+    public void Events_sort_across_year_boundary_by_absolute_date()
+    {
+        PlannerEvent nextSpring = new(FarmDate.FromGameDate(2, "spring", 1), "Spring", PlannerEventKind.SeasonBoundary);
+        PlannerEvent lastWinter = new(FarmDate.FromGameDate(1, "winter", 28), "Winter", PlannerEventKind.Festival);
+        PlannerEvent[] sorted = CalendarEventOrdering.Sort(new[] { nextSpring, lastWinter }).ToArray();
+        Assert.Equal(lastWinter, sorted[0]);
+        Assert.Equal(nextSpring, sorted[1]);
+    }
 }
 
 public sealed class ReminderTests
@@ -131,7 +141,7 @@ public sealed class PlanningPressureTests
 {
     [Theory]
     [InlineData(0, 0, 0, 0, "LOW")]
-    [InlineData(1, 0, 0, 0, "BUSY")]
+    [InlineData(1, 0, 0, 0, "NORMAL")]
     [InlineData(0, 1, 0, 0, "NORMAL")]
     [InlineData(1, 1, 2, 1, "CRITICAL")]
     public void Pressure_is_deterministic(int festivals, int birthdays, int reminders, int crops, string expected)

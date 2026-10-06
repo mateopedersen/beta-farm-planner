@@ -11,6 +11,15 @@ public enum PlannerEventKind
 
 public sealed record PlannerEvent(FarmDate Date, string Title, PlannerEventKind Kind);
 
+public static class CalendarEventOrdering
+{
+    public static IReadOnlyList<PlannerEvent> Sort(IEnumerable<PlannerEvent> events)
+    {
+        ArgumentNullException.ThrowIfNull(events);
+        return events.OrderBy(item => item.Date).ThenBy(item => item.Kind).ThenBy(item => item.Title, StringComparer.CurrentCultureIgnoreCase).ToArray();
+    }
+}
+
 public enum ReminderRepeat
 {
     Once,
