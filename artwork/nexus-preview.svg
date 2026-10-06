@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#142521"/><stop offset="1" stop-color="#253b35"/></linearGradient>
+    <linearGradient id="card" x2="0" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#f3efdf"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#07130f" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="1770" cy="70" r="300" fill="#74885e" opacity=".12"/>
+  <circle cx="100" cy="1050" r="360" fill="#bd9062" opacity=".11"/>
+  <text x="130" y="155" fill="#d9e7d4" font-family="Arial, sans-serif" font-size="24" letter-spacing="7">BETA CALENDARS · FARM PLANNING</text>
+  <text x="130" y="270" fill="#fffdf6" font-family="Georgia, serif" font-size="78" font-weight="bold">Plan a year,</text>
+  <text x="130" y="360" fill="#f0d5a5" font-family="Georgia, serif" font-size="78" font-weight="bold">one season at a time.</text>
+  <text x="132" y="425" fill="#d7e0d8" font-family="Arial, sans-serif" font-size="27">A calendar overview for dates, events, crop windows and reminders.</text>
+  <g filter="url(#shadow)">
+    <rect x="130" y="505" width="1660" height="430" rx="28" fill="url(#card)"/>
+    <text x="185" y="575" fill="#29443a" font-family="Arial, sans-serif" font-size="22" font-weight="bold" letter-spacing="3">ILLUSTRATIVE PLANNER DIAGRAM</text>
+    <text x="185" y="635" fill="#263a31" font-family="Georgia, serif" font-size="34" font-weight="bold">Year at a glance</text>
+    <text x="185" y="682" fill="#67756c" font-family="Arial, sans-serif" font-size="19">112 days · four seasons · selectable dates</text>
+    <g font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">
+      <rect x="185" y="730" width="346" height="154" rx="16" fill="#e7f0df"/><text x="358" y="765" fill="#526b47">SPRING</text>
+      <rect x="550" y="730" width="346" height="154" rx="16" fill="#f7ead9"/><text x="723" y="765" fill="#a66f45">SUMMER</text>
+      <rect x="915" y="730" width="346" height="154" rx="16" fill="#f1e4d5"/><text x="1088" y="765" fill="#8d5d40">FALL</text>
+      <rect x="1280" y="730" width="346" height="154" rx="16" fill="#e1eaf0"/><text x="1453" y="765" fill="#54728b">WINTER</text>
+    </g>
+    <g fill="#ffffff" stroke="#d6ddcf" stroke-width="2">
+      <rect x="210" y="790" width="40" height="40" rx="8"/><rect x="263" y="790" width="40" height="40" rx="8"/><rect x="316" y="790" width="40" height="40" rx="8"/><rect x="369" y="790" width="40" height="40" rx="8"/><rect x="422" y="790" width="40" height="40" rx="8"/><rect x="475" y="790" width="40" height="40" rx="8"/>
+      <rect x="575" y="790" width="40" height="40" rx="8"/><rect x="628" y="790" width="40" height="40" rx="8"/><rect x="681" y="790" width="40" height="40" rx="8"/><rect x="734" y="790" width="40" height="40" rx="8"/><rect x="787" y="790" width="40" height="40" rx="8"/><rect x="840" y="790" width="40" height="40" rx="8"/>
+      <rect x="940" y="790" width="40" height="40" rx="8"/><rect x="993" y="790" width="40" height="40" rx="8"/><rect x="1046" y="790" width="40" height="40" rx="8"/><rect x="1099" y="790" width="40" height="40" rx="8"/><rect x="1152" y="790" width="40" height="40" rx="8"/><rect x="1205" y="790" width="40" height="40" rx="8"/>
+      <rect x="1305" y="790" width="40" height="40" rx="8"/><rect x="1358" y="790" width="40" height="40" rx="8"/><rect x="1411" y="790" width="40" height="40" rx="8"/><rect x="1464" y="790" width="40" height="40" rx="8"/><rect x="1517" y="790" width="40" height="40" rx="8"/><rect x="1570" y="790" width="40" height="40" rx="8"/>
+    </g>
+    <g fill="#c2764b"><circle cx="283" cy="842" r="6"/><circle cx="403" cy="842" r="6"/><circle cx="697" cy="842" r="6"/><circle cx="1099" cy="842" r="6"/><circle cx="1431" cy="842" r="6"/></g>
+    <g fill="#6e8758"><circle cx="456" cy="842" r="6"/><circle cx="817" cy="842" r="6"/><circle cx="1172" cy="842" r="6"/><circle cx="1543" cy="842" r="6"/></g>
+  </g>
+  <text x="130" y="1000" fill="#d7e0d8" font-family="Arial, sans-serif" font-size="19">Illustrative graphic · not an in-game screenshot</text>
+  <text x="1790" y="1000" fill="#d7e0d8" font-family="Arial, sans-serif" font-size="19" text-anchor="end">BETA FARM PLANNER</text>
+</svg>
